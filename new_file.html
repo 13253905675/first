@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+
+		<meta charset="utf-8">
+		<title>未来软件工作室</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			 body {
+				overflow-x: hidden;
+			}
+ 
+			a {
+
+				text-decoration: none;
+			}
+
+			.all {
+				width: 1424px;
+
+				margin: 0 auto;
+			}
+
+			h1 {
+				color: red;
+				font-size: 3.125rem;
+			}
+
+			.middle {
+				width: 1460px;
+				height: 100px;
+				margin: 0 auto;
+				position: fixed;
+				left: 50%;
+				top: 0;
+				transform: translate(-50%,-10%);
+				background-color: white;
+				z-index: 10;
+			}
+
+			.header {
+				width: 1200px;
+				height: 100px;
+				margin: 0 auto;
+			}
+
+			.header img {
+				padding: 10px 20px 10px 100px;
+				width: 100px;
+				display: inline-block;
+				position: absolute;
+				left: 100px;
+			}
+
+			.Home1 {
+				width: 320px;
+				height: 50px;
+
+				background-color: gainsboro;
+
+				display: inline-block;
+				position: relative;
+				left: 270px;
+				top: 18px;
+			}
+
+
+			.appear1 a {
+				position: relative;
+				top: 13px;
+				left: 135px;
+				color: black;
+			}
+
+			.Home2 {
+				width: 320px;
+				height: 50px;
+
+				background-color: gainsboro;
+
+				display: inline-block;
+				position: relative;
+				left: 284px;
+				top: 18px;
+			}
+
+			.appear2 a {
+				position: relative;
+				top: 13px;
+				left: 127px;
+				color: #000000;
+			}
+
+			.Home3 {
+				width: 320px;
+				height: 50px;
+
+				background-color: gainsboro;
+
+				display: inline-block;
+				position: relative;
+				left: 296px;
+				top: 18px;
+			}
+
+			.appear3 a {
+				position: relative;
+				top: 13px;
+				left: 135px;
+				color: #000000;
+			}
+
+			.banner {
+				width: 1600px;
+				height: 550px;
+				background-image: url(QQ图片20230215162956.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+			}
+
+			h1 {
+				width: 400px;
+				color: #FFFFFF;
+				position: relative;
+				left: 150px;
+				top: 280px;
+				margin: 0;
+			}
+
+			.blackbox {
+				width: 145px;
+				height: 50px;
+				background-color: black;
+				color: #FFFFFF;
+				position: absolute;
+				right: 275px;
+				bottom: 50px;
+				box-shadow: 0 0 15px #FFFFFF;
+			}
+
+			.appear4 {
+				position: relative;
+				left: 35px;
+				top: 15px;
+			}
+
+			#introduce {
+				width: 1300px;
+				height: 500px;
+				position: relative;
+				margin: 0 auto;
+			}
+
+			.word {
+				width: 1200px;
+				height: 70px;
+				padding: 20px;
+				margin: 0 auto;
+
+			}
+			.word3 {
+				width: 1200px;
+				height: 70px;
+				padding: 20px;
+				margin: 0 auto;
+			
+			}
+			.tureword3 {
+				color: darkblue;
+				font-size: 300%;
+				font-weight: bold;
+				position: relative;
+				left: 430px;
+			}
+			
+
+			.word1 {
+				width: 1200px;
+				height: 70px;
+				padding: 20px;
+
+			}
+
+			.tureword {
+				color: darkblue;
+				font-size: 300%;
+				font-weight: bold;
+				position: relative;
+				text-align: center;
+			}
+
+			.tureword1 {
+				color: darkblue;
+				font-size: 300%;
+				font-weight: bold;
+				position: relative;
+				left: 580px;
+			}
+
+			#words {
+				display: inline-block;
+				width: 450px;
+				height: 350px;
+				position: absolute;
+				left: 700px;
+				top: 107px;
+				color: gray;
+				font-size: 114%;
+			}
+
+			.ground1 {
+				height: 750px;
+				width: 1800px;
+				background-image: url(heardone.jfif);
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+
+			.picture {
+				width: 700px;
+				height: 350px;
+				overflow: hidden;
+				position: relative;
+				left: -60px;
+			}
+
+			.picture img:hover {
+				transform: scale(1.2);
+			}
+
+
+			.picture img {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				transform: scale(1.1);
+				position: relative;
+				left: 190px;
+				transition: all 0.6s;
+			}
+
+			.distance1 {
+				width: 1480px;
+				height: 600px;
+			}
+
+			.distance2 {
+				margin: 0 auto;
+				width: 1430px;
+				height: 850px;
+				background-color: whitesmoke;
+			}
+
+			.distance3 {
+				margin: 0 auto;
+				width: 1600px;
+				height: 680px;
+				background-color: whitesmoke;
+			}
+
+			#teacher1 {
+				height: 390px;
+				width: 400px;
+				background-color: whitesmoke;
+				border-radius: 5px;
+				position: relative;
+				left: 236px;
+				top: -700px;
+				padding: 15px;
+			}
+
+			#teacher1 img {
+				border-radius: 180px;
+				position: relative;
+				left: 100px;
+				top: 15px;
+			}
+
+			.teacher2 {
+				height: 390px;
+				width: 400px;
+				background-color: whitesmoke;
+				border-radius: 5px;
+				position: relative;
+				left: 780px;
+				top: -1120px;
+				padding: 15px;
+			}
+
+			.teacher2 img {
+				width: 48%;
+				border-radius: 180px;
+				position: relative;
+				left: 100px;
+				top: 15px;
+			}
+
+			.work3,
+			.work2,
+			.work1 {
+
+				float: right;
+				margin-top: 30px;
+				overflow: hidden;
+			}
+
+			.work1 img,
+			.work2 img,
+			.work3 img,
+			.work4 img,
+			.work5 img,
+			.work6 img {
+				transform: scale(1.1);
+				transition: all 0.6s;
+			}
+
+			.work1 img:hover {
+				transform: scale(1.2);
+			}
+
+			.work2 img:hover {
+				transform: scale(1.2);
+			}
+
+			.work3 img:hover {
+				transform: scale(1.2);
+			}
+
+			.work4 img:hover {
+				transform: scale(1.2);
+			}
+
+			.work5 img:hover {
+				transform: scale(1.2);
+			}
+
+			.work6 img:hover {
+				transform: scale(1.2);
+			}
+
+			.work3 {
+				margin-right: 80px;
+			}
+
+			.work2 {
+				margin: 30px 20px 0 20px;
+			}
+
+			.work6,
+			.work5,
+			.work4 {
+				float: right;
+				margin-top: 30px;
+				overflow: hidden;
+			}
+
+			.work5 {
+				margin: 0px 10px;
+				padding: 0 20px;
+				position: relative;
+				top: 31px;
+			}
+
+			.work6 {
+				margin-right: 80px;
+			}
+
+			.ground2 {
+				height: 500px;
+				background-image: url(middle.jpg);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				position: relative;
+			}
+
+			.spirit1 {
+				height: 320px;
+				width: 360px;
+				border-radius: 10px;
+				background-color: whitesmoke;
+				position: absolute;
+				left: 300px;
+				top: 90px;
+				opacity: 0.9;
+			}
+
+			.spirit1 img {
+				position: relative;
+				top: 50px;
+				left: 150px;
+			}
+
+			.spirit2 {
+				height: 320px;
+				width: 360px;
+				border-radius: 10px;
+				background-color: whitesmoke;
+				position: relative;
+				left: 800px;
+				top: 90px;
+				opacity: 0.9;
+			}
+
+			.spirit2 img {
+				position: relative;
+				top: 50px;
+				left: 150px;
+			}
+
+			#distance4 {
+				margin: 0 auto;
+				height: 900px;
+				background-color: whitesmoke;
+				width: 1400px;
+
+			}
+
+			.new1 {
+
+				position: relative;
+				top: 50px;
+				left: 130px;
+			}
+
+			.new1 img:hover {
+
+				opacity: 0.6;
+			}
+
+			.new2 img:hover {
+
+				opacity: 0.6;
+			}
+
+			.new3 img:hover {
+
+				opacity: 0.6;
+			}
+
+			.new4 img:hover {
+
+				opacity: 0.6;
+			}
+
+
+
+
+			.new2 {
+				position: relative;
+				top: -245px;
+				left: 720px;
+			}
+
+			.new3 {
+				position: relative;
+				left: 130px;
+				top: -230px;
+			}
+
+			.new4 {
+				position: relative;
+				left: 720px;
+				top: -525px;
+			}
+
+			.new1 p {
+				position: absolute;
+				color: white;
+				font-size: 200%;
+
+				top: 150px;
+				left: 30px;
+			}
+
+			.new2 p {
+				position: absolute;
+				color: white;
+				font-size: 200%;
+
+				top: 150px;
+				left: 50px;
+			}
+
+			.new3 p {
+				position: absolute;
+				color: white;
+				font-size: 200%;
+
+				top: 150px;
+				left: 30px;
+			}
+
+			.new4 p {
+				position: absolute;
+				color: white;
+				font-size: 200%;
+
+				top: 150px;
+				left: 50px;
+			}
+
+			#distance4 a {
+				position: relative;
+				left: 640px;
+				top: -480px;
+				display: block;
+				height: 30px;
+				width: 140px;
+				background-color: #00008B;
+				border-radius: 30px;
+				color: #FFFFFF;
+				transition: all 0.6s;
+
+			}
+
+			#distance4 a:hover {
+				background-color: #FFFFFF;
+
+				color: #00008B;
+			}
+
+			.distance5 {
+				margin: 0 auto;
+				height: 350px;
+				background-color: black;
+				width: 1580px;
+			}
+
+			.distance5 img {
+				position: relative;
+				left: 270px;
+				top: 70px;
+			}
+
+			.box {
+				background-color: #000000;
+				color: white;
+				height: 200px;
+				width: 450px;
+				position: relative;
+				left: 500px;
+				top: -70px;
+
+			}
+
+			#box2 {
+				position: relative;
+				left: 856px;
+				top: -260px;
+				width: 246px;
+				height: 50px;
+				outline: none;
+				padding-left: 20px;
+			}
+
+
+			#serch {
+				background-color: royalblue;
+				color: #FFFFFF;
+				width: 100px;
+				height: 60px;
+				position: relative;
+				left: 850px;
+				top: -260px;
+
+			}
+
+			#up {
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+				background-color: #808080;
+
+			}
+			#boxshi{
+				width: 400px;
+				height: 400px;
+				position: relative;
+				background: url(programming.jpg) repeat;
+				background-size: 400px 400px;
+				
+			}
+			#boxshi::before{
+				content: "";
+				width: 400px;
+				height: 400px;
+				display: none;
+				opacity: 0.5;
+				background: rgba(0,0,0,0.6) url(arrow.png) no-repeat center;
+				background-size: 20%;
+				position: absolute;
+			}
+			#boxshi:hover::before{
+				display: block;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="middle">
+			<div class="header">
+				<img src="小组logo.png" alt="这是一个小组logo" />
+				<div class="Home1"><span class="appear1"><a href="#">Home</a></span></div>
+				<div class="Home2"><span class="appear2"><a href="#introduce">About Us</a></span></div>
+				<div class="Home3"><span class="appear3"><a href="#distance4">News</a></span></div>
+			</div>
+		</div>
+		<div class="all">
+
+			<div class="banner">
+				<h1>未来软件工作室</h1>
+				<div class="blackbox"><span class="appear4">了解更多</span>
+
+				</div>
+			</div>
+		</div>
+		<div class="all">
+
+			<div id="introduce">
+				<div class="word">
+					<p class="tureword">小组介绍</p>
+				</div>
+				<div class="picture ">
+					<img src="headers.jfif">
+				</div>
+				<div id="words">
+
+					未来软件工作室由 高国红，李士勇两位老师于2011年6月创办，以提高学生软件开发技术为核心培养目标，秉承追求卓越，
+					采取理论基础、实践能力与综合素质并重的人才培养理念，旨在全方位提高学生的就业质量和创新创业能力。工作室成立以来，逐步形成了Web设计开、
+					大前端设计开发两大学习方向以及Java Web、数据处理、移动开发、UI设计等若干细分方向，凝练了成熟的学习路线和培养方案。
+					一路走来我们成绩斐然，先后获得国家级创新创业项目5项，河南省创业扶持资金项目2项，校级创新创业项目8项，
+					在各类学科竞赛中获国家级奖项12项，省级奖项91项，设计开发各类软件产品40余个，培养毕业生50余人，
+					均就职于京东、联想、新浪等知名企业，
+					平均就业年薪达30万元以上。未来，做一个有影响力的团队，未来人，做一个有影响力的人.未来有你，未来可期。</div>
+			</div>
+		</div>
+		<div class="all">
+			<div class="distance1">
+
+				<div class="word1">
+					<p class="tureword1">指导老师</p>
+				</div>
+
+				<div class="ground1">
+
+					<!-- <img src="heardone.jfif" alt="这是一个背景" > -->
+
+				</div>
+				<div id="teacher1">
+					<img src="./l1.jpg">
+					<p>&nbsp; </p>
+
+					<h2><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高国红</strong></h2>
+					<small>
+						<p> <strong> 职位:</strong> 副教授，在职博士，现任信息工程学院副院长 </p>
+						<p><strong>主要研究方向:</strong>云计算与物联网技术 </p>
+						<p><strong>
+								导师寄语:</strong>胜利贵在坚持，要取得胜利就要坚持不懈地努力，饱尝了许多次的失败之后才能成功，即所谓的失败乃成功之母，成功也就是胜利的标志，也可以这样说，坚持就是胜利
+						</p>
+					</small>
+				</div>
+				<div class="teacher2">
+					<img src="./l2.png" alt="这是一个老师">
+					<p>&nbsp; </p>
+					<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>李士勇</strong></h2>
+					<small>
+						<p> <strong> 职位:</strong> 讲师，硕士。</p>
+						<p><strong>研究方向:</strong>人工智能、数据挖掘</p>
+						<p><strong>学习成果:</strong>《Java面向对象》课程研究、《JSP程序设计》、基于.NET的智能网络教学系统开发等。 </p>
+						<p> <strong> 导师寄语:</strong>成功的意义不在于你取得多大的成就，也不在于你有多么的伟大。
+							因为，成功总会与努力过的人握手，只要享受了努力的过程，我们就不是失败者 </p>
+					</small>
+				</div>
+
+			</div>
+		</div>
+		<div class="distance2">
+
+			<div class="word">
+				<p class="tureword">项目展示</p>
+			</div>
+			<div class="work3">
+				<img src="p3.png" width="400px" height="300px">
+			</div>
+			<div class="work2">
+				<img src="p2.png" width="400px" height="300px">
+			</div>
+			<div class="work1">
+				<img src="p1.png" width="400px" height="300px">
+			</div>
+			<div class="work6">
+				<img src="p6.png" width="400px" height="300px">
+			</div>
+
+			<div class="work5">
+				<img src="p5.png" width="400px" height="300px">
+			</div>
+			<div class="work4">
+				<img src="p4.png" width="400px" height="300px">
+			</div>
+
+
+
+		</div>
+		<div class="distance3">
+
+			<div class="word3">
+				<p class="tureword3">小组精神</p>
+			</div>
+			<div class="ground2">
+
+				<div class="spirit1">
+					<img src="value_1.png" width="50px" height="50px">
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+
+
+					<span>
+						<font size="3" color="gray"></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;做一个有影响的人
+					</span>
+
+				</div>
+				<div class="spirit2">
+					<img src="value_2.png" width="50px" height="50px">
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+
+
+					<span>
+						<font size="3" color="gray"></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;做一个有影响的团队
+					</span>
+				</div>
+			</div>
+
+
+		</div>
+		<div id="distance4">
+
+			<div class="word">
+				<p class="tureword">小组新闻</p>
+			</div>
+			<div class="new1">
+				<img src="IMG_3253.JPG" width="560px" height="290px">
+				<p><strong>小组运动会</strong></p>
+			</div>
+			<div class="new2">
+				<img src="1669531914964.jpeg" width="560px" height="290px">
+				<p><strong>游玩八里沟</strong></p>
+			</div>
+			<div class="new3">
+				<img src="1669531592606.jpeg" width="560px" height="290px">
+				<p><strong>小组年会</strong></p>
+			</div>
+			<div class="new4">
+				<img src="QQ图片20221128160141.jpg" width="560px" height="290px">
+				<p><strong>小组聚餐</strong></p>
+			</div>
+
+			<a href="#">
+				<center>View More</center>
+			</a>
+
+		</div>
+		<div class="distance5">
+			<img src="logoFooter.png" width="150px" height="128px">
+			<div class="box">
+				<h2>Follow Us</h2>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<h4>Address:河南省新乡市华兰大道东段河南科技学院</h4>
+				<p>&nbsp;</p>
+				<h4>Tel:13069385502</h4>
+				<p>&nbsp;</p>
+				<h4>E-mail:lovewlgzs@wlgzs.net</h4>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<center><small>Copeyright2022未来软件工作室.All right reserved 未来软件工作室</small></center>
+			</div>
+
+			<form action="http://www.baidu.com" method="GET" target="_blank">
+				<input type="text" name="word" id="box2" placeholder="请输入内容" autocomplete="off" />
+				<input type="submit" id="serch" value="搜索" />
+			</form>
+		</div>
+		<div id="up">
+
+			<a href="#"><img src="arrow.png" width="50px" height="50px"></a>
+		</div>
+		
+
+	</body>
+</html>
